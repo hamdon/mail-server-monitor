@@ -115,7 +115,7 @@ func startMailServer(s string) interface{} {
 }
 
 func main() {
-	ports := []string{"25", "110", "143", "389", "465", "993", "995", "6000", "6020", "6080", "6989", "6990"}
+	ports := []string{"25", "110", "143", "389", "465", "993", "995", "6000", "6020","6989", "6990"}
 	chain := []func(string) interface{}{
 		startMailServer,
 	}
